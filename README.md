@@ -36,4 +36,4 @@ Tested on Windows.
 
 # Decentralized Application (dApp)
 (soon)
-Current Progress: [Click Here](./dapp)
+Current Progress: [Click Here](https://ekasulistyawan.github.io/simple-token/dapp)
