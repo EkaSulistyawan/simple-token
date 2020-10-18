@@ -43,4 +43,7 @@ Tested on Windows.
 5. Make sure the `bs-config.json` goes to `./dapp` directory.
 Note: This repository not include `node_modules` upon `lite-server` installation.
 ### Running Website
-Run `npm run dev`
+Run `npm run dev` <br>
+:warning: **You may reload the page several times to see the result.** <br> 
+:warning: **Be careful with Pending/Unsucess transaction, Always monitor the transaction through Metamask.** <br>
+(Repaired Soon)
