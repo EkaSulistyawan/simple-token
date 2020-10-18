@@ -35,5 +35,12 @@ Tested on Windows.
 2. Import your account using 12-word Mnemonic Phrase.
 
 # Decentralized Application (dApp)
-(soon)
-Current Progress: [Click Here](https://ekasulistyawan.github.io/simple-token/dapp)
+### NPM Lite-Server Preparation
+1. Run `npm init` in simple-token directory.
+2. Set `package-json` as the initial `main` configuration.
+3. Run `npm install lite-server --save-dev` to install lite-server.
+4. Make sure the `dev: lite-server` attribute under `scripts` in `package.json`.
+5. Make sure the `bs-config.json` goes to `./dapp` directory.
+Note: This repository not include `node_modules` upon `lite-server` installation.
+### Running Website
+Run `npm run dev`
