@@ -1,5 +1,5 @@
 # **simple-token (Overview)**
-An example of smart contract utilization as automated-bank. Can perform simple deposit/withdraw to the automated-bank.
+An example of smart contract utilization as automated-bank. Can perform simple deposit/withdraw to an automated-bank.
 Tested on Windows.
 
 # **Preresquite**
