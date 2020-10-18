@@ -1,4 +1,5 @@
-const contract_address = '0x7dDD7787Bb3213bF2eEf2842Bd2E19d72299CAC4';
+const contract_address = '0x3e3639b240a6e59bbcbec0e2ab88af516a579e51'; // change this to local or Testnet
+// Ropsten Contract Address : 0x3e3639b240a6e59bbcbec0e2ab88af516a579e51
 const contract_abi = [
     {
       "anonymous": false,
