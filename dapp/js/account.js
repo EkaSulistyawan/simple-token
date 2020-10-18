@@ -38,9 +38,18 @@ window.addEventListener('load',async()=>{
         })
         //  emitter
         $('#deposit').click(()=>{
-            instance.deposit({from:activeAcc,value:$('#deposit-val').val()},(err,res)=>{
+            instance.deposit({from:activeAcc,value:$('#deposit-val').val()},(err,txhash)=>{
                 if(!err){
-                    console.log(res);
+                    web3.eth.getTransactionReceipt(txhash,(err,res)=>{
+                        if(!err){
+                            if(res==null){
+                                console.log('pending');
+                            }else{
+                                console.log('success');
+                                document.location.reload(true);
+                            }
+                        }
+                    })
                 }
             })
         })
@@ -52,9 +61,19 @@ window.addEventListener('load',async()=>{
                     $('#withdraw-section').show()
                     $('#warning-withdraw').hide()
                     $('#withdraw').click(()=>{
-                        instance.withdraw($('#withdraw-val').val(),{from:activeAcc},(err,res)=>{
+                        instance.withdraw($('#withdraw-val').val(),{from:activeAcc},(err,txhash)=>{
                             if(!err){
                                 console.log(res);
+                                web3.eth.getTransactionReceipt(txhash,(err,res)=>{
+                                    if(!err){
+                                        if(res==null){
+                                            console.log('pending');
+                                        }else{
+                                            console.log('success');
+                                            document.location.reload(true);
+                                        }
+                                    }
+                                })
                             }
                         })
                     })
